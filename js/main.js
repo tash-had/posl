@@ -137,6 +137,7 @@ function fetchTumblr(apiLink) {
             url: apiLink,
             dataType: "jsonp",
             type: "GET",
+            cache: true, 
             data: {
                 api_key: tumblrAPIKey,
                 jsonp: "tumblrJsonCallback"
