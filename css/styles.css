@@ -1,0 +1,85 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100);
+@font-face {
+    font-family: collegeFont;
+    src: url(college.ttf);
+}
+@font-face {
+    font-family: basicfont;
+    src: url(basicfont.ttf);
+}
+@font-face {
+    font-family: caviard;
+    src: url(CaviarDreams.ttf);
+}
+
+::selection{
+    background: #A31919;
+}
+#mainTitle {
+    font-family: collegeFont;
+    font-size: 3em;
+}
+#mainSlogan {
+    font-family: basicfont;
+    font-weight: bold;
+    padding-bottom: 2%;
+}
+#navButtons {
+    margin-top: 3%;
+    text-align: center;
+}
+#loadButton{
+    text-align: center;
+}
+.navClass {
+    font-family: caviard;
+    background-color: #A31919;
+}
+.navClass:hover,
+.navClass:active {
+    background-color: #410A0A;
+}
+img {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 6px;
+    opacity: 0.6;
+    z-index: 1;
+    filter: gray;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+.contentLink {
+    position: relative;
+    padding: 0;
+    display: block;
+}
+.titleText {
+    position: absolute;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 200px;
+    height: 200px;
+    line-height: 1.5em;
+    font-size: 1em;
+    font-family: caviard;
+    padding-left: 3px;
+    padding-right: 1px;
+    padding-top: 25px;
+    text-align: center;
+    overflow-y: scroll;
+    z-index: 10;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.titleText:hover {
+    opacity: 1;
+}
