@@ -14,10 +14,6 @@
 ::selection {
     background: #A31919;
 }
-#contentGrid {
-    margin-left: auto;
-    margin-right: auto;
-}
 #mainTitle {
     font-family: collegeFont;
     font-size: 3em;
