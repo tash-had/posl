@@ -67,7 +67,7 @@ function fetchArticles(redditApi) {
             url: redditApi,
             dataType: 'json',
             type: 'GET',
-            cache: false,
+            cache: true,
             success: function(data) {
                 $(data.data.children).each(function(index, value) {
                     var articleLink = value.data.url;
