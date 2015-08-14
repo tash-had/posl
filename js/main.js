@@ -14,7 +14,6 @@ var redditTopAll = "http://www.reddit.com/r/UpliftingNews/top.json?sort=top&t=al
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 	document.getElementById("mainBody").style.overflowX = "hidden";
 }
-
 $(document).ready(function() {
 	msieversion();
 	fetchTumblr(tumblrFirstBlog);
