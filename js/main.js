@@ -44,7 +44,9 @@ function completeFunction(loopLength) {
 
     var count = 0;
     while (count < loopLength) {
-        articleTitle[count] = toTitleCase(articleTitle[count]);
+        if(preventDuplicate(articleTitle[count])){
+            articleTitle[count] = toTitleCase(articleTitle[count]);
+        }
         count++;
     }
     var x = 0;
@@ -121,9 +123,9 @@ tumblrJsonCallback = function(data) {
                 }
             }
         });
-    } catch (err) {
-        console.log("err");
-    }
+} catch (err) {
+    console.log("err");
+}
 }
 
 
