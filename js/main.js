@@ -11,6 +11,9 @@ var redditRecentTop = "http://www.reddit.com/r/upliftingnews/top.json?";
 var redditTopWeek = "http://www.reddit.com/r/UpliftingNews/top.json?sort=top&t=week";
 var redditTopAll = "http://www.reddit.com/r/UpliftingNews/top.json?sort=top&t=all";
 
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	document.getElementById("mainBody").style.overflowX = "hidden";
+}
 
 $(document).ready(function() {
 	msieversion();

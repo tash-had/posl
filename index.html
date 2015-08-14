@@ -12,7 +12,7 @@
     <script src="js/vendor/modernizr.js"></script>
 </head>
 
-<body onload="completeFunction(40);">
+<body onload="completeFunction(40);" id="mainBody">
     <div class="row">
         <div class="medium-12 columns" id="navButtons">
             <h2 id="mainTitle">Posl.</h2>
@@ -25,15 +25,13 @@
         </div>
     </div>
     <div class="row">
-        <div class="small-12 columns">
-            <ul class="small-block-grid-2 medium-block-grid-4 columns" id="contentGrid">
-                <hr>
-            </ul>
-            <div id="loadButton">
-                <button class="button round" onclick="loadClick();">Load More</button>
-            </div>
+        <ul class="small-block-grid-2 medium-block-grid-4 columns" id="contentGrid">
             <hr>
+        </ul>
+        <div id="loadButton">
+            <button class="button round" onclick="loadClick();">Load More</button>
         </div>
+        <hr>
     </div>
 
     <script src="js/vendor/jquery.js"></script>
