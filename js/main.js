@@ -36,6 +36,7 @@ function msieversion() {
 
 function loadClick(){
 	var totalLength = articlesUrl.length; 
+	document.getElementById("contentGrid").innerHTML =""; 
 	completeFunction(totalLength); 
 	$("#loadButton").hide(); 
 }
