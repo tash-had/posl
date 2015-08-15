@@ -61,7 +61,7 @@ function completeFunction(loopLength) {
     $("#contentGrid").slideDown(1000);
 }
 
-function fetchArticles(redditApiredditApi) {
+function fetchArticles(redditApi) {
     try {
         $.ajax({
             url: redditApi,
