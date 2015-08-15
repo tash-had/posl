@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,34 +11,36 @@
     <link rel="shortcut icon" type="img/png" href="img/icon.png">
     <script src="js/vendor/modernizr.js"></script>
 </head>
-<body onload="completeFunction(40);">
+
+<body onload="completeFunction(40);" id="mainBody">
     <div class="row">
         <div class="medium-12 columns" id="navButtons">
             <h2 id="mainTitle">Posl.</h2>
             <h4 id="mainSlogan">News You Don't Hate Reading.</h4>
 
-            <a href="http://github.com/tash-had/posl" target="_blank" class="button round navClass" id="githubButton" style="background-color: #4c0000">GitHub</a>
+            <a href="http://github.com/tash-had/posl" target="_blank" class="button round navClass" id="githubButton" style="background-color: #008cba">GitHub</a>
             <button class="button round navClass" onclick="aboutClick()">About</button>
             <button onclick="randomArticle()" class="button round navClass">Random Article</button>
-            <a href="http://www.tash-had.com" class="button round navClass" style="background-color: #4c0000">Contact</a>
+            <a href="http://www.tash-had.com" class="button round navClass" style="background-color: #008cba">Contact</a>
         </div>
     </div>
     <div class="row">
-        <ul class="small-block-grid-2 medium-block-grid-4" id="contentGrid">
+        <ul class="small-block-grid-2 medium-block-grid-4 columns" id="contentGrid">
             <hr>
         </ul>
-        <div id="loadButton">       
-           <button class="button round" onclick="loadClick();">Load More</button>
-       </div>
-       <hr>
-   </div>
+        <div id="loadButton">
+            <button class="button round" onclick="loadClick();">Load More</button>
+        </div>
+        <hr>
+    </div>
 
-   <script src="js/vendor/jquery.js"></script>
-   <script type="text/javascript" src="js/main.js"></script>
-   <script src="js/foundation.min.js"></script>
-   <script type="text/javascript" src="js/alertify.js"></script>
-   <script>
-    $(document).foundation();
-</script>
+    <script src="js/vendor/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script type="text/javascript" src="js/alertify.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
 </body>
+
 </html>

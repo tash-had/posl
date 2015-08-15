@@ -11,9 +11,8 @@
     font-family: caviard;
     src: url(CaviarDreams.ttf);
 }
-
-::selection{
-    background: #A31919;
+::selection {
+    background: #4CAECE;
 }
 #mainTitle {
     font-family: collegeFont;
@@ -28,16 +27,20 @@
     margin-top: 3%;
     text-align: center;
 }
-#loadButton{
+#loadButton {
     text-align: center;
+}
+body {
+    overflow-x: hidden;
 }
 .navClass {
     font-family: caviard;
-    background-color: #A31919;
+    background-color: #4CAECE;
 }
 .navClass:hover,
-.navClass:active {
-    background-color: #410A0A;
+.navClass:active,
+.navClass:focus {
+    background-color: #008cba;
 }
 img {
     position: relative;
@@ -50,9 +53,12 @@ img {
     border-radius: 6px;
     opacity: 0.6;
     z-index: 1;
-    filter: gray;
+    /*filter: gray;
     filter: grayscale(1);
-    -webkit-filter: grayscale(1);
+    -webkit-filter: grayscale(1);*/
+}
+#contentGrid {
+    margin: 0 auto;
 }
 .contentLink {
     position: relative;
@@ -63,7 +69,7 @@ img {
     position: absolute;
     color: black;
     background-color: rgba(255, 255, 255, 0.8);
-    width: 200px;
+    width: 150px;
     height: 200px;
     line-height: 1.5em;
     font-size: 1em;
@@ -74,12 +80,9 @@ img {
     text-align: center;
     overflow-y: scroll;
     z-index: 10;
-    opacity: 0;
+    opacity: 1;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-}
-.titleText:hover {
-    opacity: 1;
 }
