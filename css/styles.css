@@ -38,7 +38,8 @@ body {
     background-color: #A31919;
 }
 .navClass:hover,
-.navClass:active {
+.navClass:active,
+.navClass:focus {
     background-color: #410A0A;
 }
 img {
@@ -65,7 +66,7 @@ img {
     position: absolute;
     color: black;
     background-color: rgba(255, 255, 255, 0.8);
-    width: 200px;
+    width: 150px;
     height: 200px;
     line-height: 1.5em;
     font-size: 1em;
@@ -76,12 +77,9 @@ img {
     text-align: center;
     overflow-y: scroll;
     z-index: 10;
-    opacity: 0;
+    opacity: 1;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-}
-.titleText:hover {
-    opacity: 1;
 }

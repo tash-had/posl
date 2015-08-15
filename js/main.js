@@ -22,6 +22,20 @@ $(document).ready(function() {
 
 });
 
+$(window).load(function() {
+    $("img").mouseenter(function() {
+        $(this).animate({
+            opacity: 0.3
+        }, 400);
+    });
+
+    $("img").mouseleave(function() {
+        $(this).animate({
+            opacity: 1
+        }, 400);
+    });
+
+});
 
 function msieversion() {
 
@@ -67,7 +81,7 @@ function fetchArticles(redditApi) {
             url: redditApi,
             dataType: 'json',
             type: 'GET',
-            cache: true,
+            cache: false,
             success: function(data) {
                 $(data.data.children).each(function(index, value) {
                     var articleLink = value.data.url;
@@ -137,7 +151,7 @@ function fetchTumblr(apiLink) {
             url: apiLink,
             dataType: "jsonp",
             type: "GET",
-            cache: true, 
+            cache: false,
             data: {
                 api_key: tumblrAPIKey,
                 jsonp: "tumblrJsonCallback"
@@ -180,7 +194,7 @@ function randomArticle() {
 function aboutClick() {
     var info = "The purpose of Posl is to provide you with uplifting news stories. In contrast to what we generally see in everyday news, Posl aims to spread the good things happening in the world. Posl fetches news articles from the following sources:";
     var sourceOne = "<br><a href='http://www.reddit.com/r/upliftingnews/' target=_blank>Reddit - UpliftingNews</a>";
-    var sourceTwo = "<br><a href='http://www.webofgoodnews.com/' target=_blank>Web Of Good News</a>";
+    var sourceTwo = "<br><a href='http://www.webofgoodnews.com/' target=_blank>Tumblr - Web Of Good News</a>";
     var sourceThree = "<br><a href='http://www.good-news-network.tumblr.com/' target=_blank>Tumblr - Good News Network</a>";
     var openSource = "<br><br>Also, this project is opensource and <a href='http://github.com/tash-had/posl' target=_blank>can be found on my GitHub</a>";
 
