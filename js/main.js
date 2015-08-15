@@ -61,13 +61,13 @@ function completeFunction(loopLength) {
     $("#contentGrid").slideDown(1000);
 }
 
-function fetchArticles(redditApi) {
+function fetchArticles(redditApiredditApi) {
     try {
         $.ajax({
             url: redditApi,
             dataType: 'json',
             type: 'GET',
-            cache: true,
+            cache: false,
             success: function(data) {
                 $(data.data.children).each(function(index, value) {
                     var articleLink = value.data.url;
@@ -137,7 +137,7 @@ function fetchTumblr(apiLink) {
             url: apiLink,
             dataType: "jsonp",
             type: "GET",
-            cache: true, 
+            cache: false, 
             data: {
                 api_key: tumblrAPIKey,
                 jsonp: "tumblrJsonCallback"
