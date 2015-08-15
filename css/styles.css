@@ -12,7 +12,7 @@
     src: url(CaviarDreams.ttf);
 }
 ::selection {
-    background: #A31919;
+    background: #4CAECE;
 }
 #mainTitle {
     font-family: collegeFont;
@@ -35,12 +35,12 @@ body {
 }
 .navClass {
     font-family: caviard;
-    background-color: #A31919;
+    background-color: #4CAECE;
 }
 .navClass:hover,
 .navClass:active,
 .navClass:focus {
-    background-color: #410A0A;
+    background-color: #008cba;
 }
 img {
     position: relative;
@@ -53,9 +53,12 @@ img {
     border-radius: 6px;
     opacity: 0.6;
     z-index: 1;
-    filter: gray;
+    /*filter: gray;
     filter: grayscale(1);
-    -webkit-filter: grayscale(1);
+    -webkit-filter: grayscale(1);*/
+}
+#contentGrid {
+    margin: 0 auto;
 }
 .contentLink {
     position: relative;
