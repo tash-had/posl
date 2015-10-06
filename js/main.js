@@ -11,7 +11,7 @@ var redditRecentTop = "http://www.reddit.com/r/upliftingnews/top.json?";
 var redditTopWeek = "http://www.reddit.com/r/UpliftingNews/top.json?sort=top&t=week";
 var redditTopAll = "http://www.reddit.com/r/UpliftingNews/top.json?sort=top&t=all";
 
-var loadClickCount = 0; 
+var loadClickCount = 0;
 
 
 $(document).ready(function() {
@@ -21,10 +21,9 @@ $(document).ready(function() {
     fetchTumblr(tumblrSecondBlog);
     fetchArticles(redditTopAll);
     fetchArticles(redditTopWeek);
-
 });
 
-$(window).load(function() {
+function imageHoverAnim() {
     $("img").mouseenter(function() {
         $(this).animate({
             opacity: 0.3
@@ -36,8 +35,7 @@ $(window).load(function() {
             opacity: 1
         }, 400);
     });
-
-});
+}
 
 function msieversion() {
 
@@ -51,14 +49,16 @@ function msieversion() {
 }
 
 function loadClick() {
-    loadClickCount = loadClickCount+1; 
-    if(loadClickCount==1){
-        completeFunction(40); 
-    }else{
+    loadClickCount = loadClickCount + 1;
+    if (loadClickCount == 1) {
+        completeFunction(40);
+        imageHoverAnim();
+    } else {
         var totalLength = articlesUrl.length;
         document.getElementById("contentGrid").innerHTML = "";
         completeFunction(totalLength);
         $("#loadButton").hide();
+        imageHoverAnim();
     }
 }
 
@@ -146,9 +146,9 @@ tumblrJsonCallback = function(data) {
                 }
             }
         });
-} catch (err) {
-    console.log("err");
-}
+    } catch (err) {
+        console.log("err");
+    }
 }
 
 
