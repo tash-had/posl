@@ -3,13 +3,13 @@ var articlesUrl = [];
 var articleThumbnail = [];
 var articleTitle = [];
 
-var tumblrFirstBlog = "https://api.tumblr.com/v2/blog/good-news-network.tumblr.com/posts/?";
-var tumblrSecondBlog = "https://api.tumblr.com/v2/blog/webofgoodnews.com/posts/?";
+var tumblrFirstBlog = "http://api.tumblr.com/v2/blog/good-news-network.tumblr.com/posts/?";
+var tumblrSecondBlog = "http://api.tumblr.com/v2/blog/webofgoodnews.com/posts/?";
 var tumblrAPIKey = "AR53KZcOUK8PYzyebMamkQYeMxMJ3CJwGes6L5Fhbw49LBlUB1"
 
-var redditRecentTop = "https://www.reddit.com/r/upliftingnews/top.json?";
-var redditTopWeek = "https://www.reddit.com/r/UpliftingNews/top.json?sort=top&t=week";
-var redditTopAll = "https://www.reddit.com/r/UpliftingNews/top.json?sort=top&t=all";
+var redditRecentTop = "http://www.reddit.com/r/upliftingnews/top.json?";
+var redditTopWeek = "http://www.reddit.com/r/UpliftingNews/top.json?sort=top&t=week";
+var redditTopAll = "http://www.reddit.com/r/UpliftingNews/top.json?sort=top&t=all";
 
 var loadClickCount = 0;
 
